@@ -1,7 +1,5 @@
 package com.gp.study.design.singleton.container;
 
-import org.springframework.util.StringUtils;
-
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
