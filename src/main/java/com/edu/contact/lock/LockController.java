@@ -1,6 +1,5 @@
-package com.edu.contact;
+package com.edu.contact.lock;
 
-import com.edu.contact.lock.UnSyncToSync;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
