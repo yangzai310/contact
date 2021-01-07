@@ -10,13 +10,13 @@ import java.util.concurrent.TimeUnit;
 @RequestMapping("/threadPool")
 public class MyThreadPoolController {
 
-    private static final MyThreadPool myThreadPool = new MyThreadPool(5, new LinkedBlockingQueue(5));
+    private static final MyThreadPool MYTHREADPOOL = new MyThreadPool(5, new LinkedBlockingQueue(5));
 
     @RequestMapping("/test")
     public void doSth() throws Exception{
 
         for (int i = 0; i <6; i++) {
-            myThreadPool.execute(() -> {
+            MYTHREADPOOL.execute(() -> {
                 System.out.println("threadName" + Thread.currentThread().getName() + "  start");
                 try {
                     TimeUnit.SECONDS.sleep(15);
