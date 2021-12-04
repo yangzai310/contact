@@ -5,6 +5,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>concurrent</module>
+        <module>performance</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
